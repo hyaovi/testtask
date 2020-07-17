@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta name="author" content="Sergey S Yaglov" />
+    <script type="module">
+      import { Component } from "./Component.js";
+      import { App } from "./App.js";
+      import { Button } from "./Button.js";
+
+      Component.assoc["c-button"] = Button;
+
+      const app = new App({ prop_greeting: "Hi CORONA", prop_ping: "pong" });
+      app.render(document.getElementById("app"));
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
