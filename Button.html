@@ -1,6 +1,11 @@
 <label :for="prop_id">
   {{prop_label}}
 </label>
-<button :id="prop_id" @click="button_click">
+<button class="btn btn-lg btn-primary" style="
+background: linear-gradient(135deg, #E8ADAA,#6b3a32);
+border:none; 
+border-top-right-radius: 0px; /* .btn class has rounded all corners */
+box-shadow: 25px 18px 20px 0px rgba(0, 0, 0, .7);
+" :id="prop_id" @click="button_click">
   {{prop_caption}}
 </button>

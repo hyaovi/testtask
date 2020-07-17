@@ -1,18 +1,23 @@
 <html>
-  <head>
-    <meta name="author" content="Sergey S Yaglov" />
-    <script type="module">
-      import { Component } from "./Component.js";
-      import { App } from "./App.js";
-      import { Button } from "./Button.js";
 
-      Component.assoc["c-button"] = Button;
+<head>
+  <meta name="author" content="Sergey S Yaglov" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script type="module">
+    import { Component } from "./Component.js";
+    import { App } from "./App.js";
+    import { Button } from "./Button.js";
 
-      const app = new App({ prop_greeting: "Hi CORONA", prop_ping: "pong" });
-      app.render(document.getElementById("app"));
-    </script>
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+    Component.assoc["c-button"] = Button;
+
+    const app = new App({ prop_greeting: "Hi CORONA", prop_ping: "pong" });
+    app.render(document.getElementById("app"));
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
 </html>
